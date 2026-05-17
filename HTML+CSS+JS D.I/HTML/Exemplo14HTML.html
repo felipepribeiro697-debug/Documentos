@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 14 - HTML</title>
+</head>
+
+<body>
+    <form action="outroNome.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="">Nome</label><br>
+                <input type="text" name="txtNome" id="txtNome">
+            </div>
+            <br>
+            <div>
+                <label for="">Ano do Nascimento</label><br>
+                <input type="number" name="txtAnoNascimento" id="txtAnoNascimento">
+            </div>
+            <br>
+            <div>
+                <label for="">Telefone</label><br>
+                <input type="tel" name="txtTelefone" id="txtTelefone">
+            </div>
+            <br>
+            <div>
+                <label for="">Estado Civil</label><br>
+                <select name="cboEstadoCivil" id="cboEstadoCivil">
+                    <option value="1"></option>
+                    <option value="2">Solteiro</option>
+                    <option value="3">Casado</option>
+                    <option value="4">Divorciado</option>
+                    <option value="5">Viúvo</option>
+                    <option value="6">União Estável</option>
+                    <option value="7">Outros</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <div>
+                <label for="">Área de Atuação</label>
+                <input type="checkbox" name="chkAreaAtuacao" id="chkAreaAtuacao" value="1">Desenvolvimento
+                <input type="checkbox" name="chkAreaAtuacao" id="chkAreaAtuacao" value="2">Redes
+                <input type="checkbox" name="chkAreaAtuacao" id="chkAreaAtuacao" value="3">Banco de Dados
+                <input type="checkbox" name="chkAreaAtuacao" id="chkAreaAtuacao" value="4">Front-end
+            </div>
+            <br>
+            <div>
+                <label for="">Selecione uma região de preferência</label><br>
+                <input type="radio" name="rdRegiao" id="rdRegiao" value="1">Centro-Oeste <br>
+                <input type="radio" name="rdRegiao" id="rdRegiao" value="2">Nordeste <br>
+                <input type="radio" name="rdRegiao" id="rdRegiao" value="3">Sudeste <br>
+                <input type="radio" name="rdRegiao" id="rdRegiao" value="4">Sul <br>
+                <input type="radio" name="rdRegiao" id="rdRegiao" value="5">Norte <br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <button type="submit">Cadastrar</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
